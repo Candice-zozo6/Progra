@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <h1>Apprenons ensemble l'Alphabet</h1>
+         <p>La première lettre est le a.</p>
+         <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#catalogue">Alphabet catalogue</a></li>
+                <li><a href="#method">Comment apprendre l'alphabet ?</a></li>
+            </ul>
+         </nav>
+
+    </header>
+    <main>
+        <section id="about">
+            <h2> D'où vient l'alphabet ?</h2>
+            <p>L’alphabet moderne dérive principalement de l’alphabet phénicien.</p>
+        </section>
+        <section id="catalogue">
+            <h2>Alphabet catalogue</h2>
+            <p>Il contient ajd 26 lettres allant de a à z. 
+                Les voici : "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y et z"
+            </p>
+            <form action="catalogue" method="get" aria-describedby="filter-note">
+                <fieldset>
+                    <legend>Filter the catalogue</legend>
+                    <label for="typ">Type</label>
+                    <select id="typ" name ="Type">
+                        <option value="">All types</option>
+                        <option value="Consonne">Consonne</option>
+                        <option value="Voyelle">Voyelle</option>
+                     </select>
+                     <label for="not"> Note</label>
+                     <input type="number" id="not" name="note max"
+                            min="0" step="1" placeholder="e.g 2">
+                    <div class="form-action"></div>
+                    <button type="submit" disabled> Filter lettres</button>
+                    <button type="reset"> Reset fields</button>
+                </fieldset>
+            </form>
+            <table>
+                <caption> Petite selection de mes lettres préférées</caption>
+                <thead>
+                    <tr>
+                        <th scope="col"> Lettres</th>
+                        <th scope="col"> Ma note </th>
+                        <th scope="col"> Type de lettre </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">A</th>
+                        <td>8</td>
+                        <td>Voyelle</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Z</th>
+                        <td> 9</td>
+                        <td> Consonne</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">m</th>
+                        <td> 9</td>
+                        <td> Consonne</td>
+                    </tr>
+                </tbody>
+            </table>
+        <section id="method">
+            <h2>Comment apprendre l'alphabet ? </h2>
+            <p>Chantez avec moi : "a, b, c, d, e, f, g, h, i, j, k, lmnop, q, r, s, t, u, v, w, x, y, z"</p>
+            <h3>Les voyelles </h3>
+            <p>a e i o u y </p>
+            <h3>Les consonnes</h3>
+            <p> Toutes les autres</p>
+        </section>
+        <footer>
+            <h3>
+                Data source : 
+            </h3>
+            <p>
+                <a href="https://fr.wikipedia.org/wiki/Sum%C3%A9rien">
+                Explication du Sumérien
+                </a>
+            </p>
+             <p>
+                <a href="#about">
+                Back to the introduction.
+                 </a>
+             </p>
+        </footer>
+    </main>
+</body>
+</html>
